@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hamid Tech World builds modern websites, software, apps and digital solutions.">
+  <title>Hamid Tech World | Innovate • Develop • Deliver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Hamid Tech World home"><img src="assets/hamid-tech-world-logo.png" alt="Hamid Tech World logo"></a>
+    <button class="menu" aria-label="Open navigation" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#careers">Careers</a><a href="#contact">Contact Us</a>
+    </nav>
+    <a class="btn" href="#contact">Get In Touch ↗</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container"><div class="hero-content">
+      <p class="eyebrow">Innovate • Develop • Deliver</p>
+      <h1>HAMID<br><span class="blue">TECH WORLD</span></h1>
+      <p>We build modern websites, powerful software, amazing apps and digital solutions that help businesses grow and succeed.</p>
+      <div class="actions"><a class="btn" href="#services">Explore Services →</a><a class="btn outline" href="#contact">Contact Us ↗</a></div>
+    </div></div>
+  </section>
+
+  <section id="about">
+    <div class="container about-grid">
+      <img class="about-photo" src="assets/digital-globe.jpg" alt="Digital technology and connected world">
+      <div class="about-copy">
+        <p class="section-kicker">About Us</p><h2>We Turn Ideas Into Digital Reality</h2>
+        <p>HAMID TECH WORLD is a technology company focused on providing end-to-end digital solutions for businesses, startups, and organizations. We combine creativity, technology and strategy to build products that make an impact.</p>
+        <a class="btn" href="#contact">Learn More About Us →</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>☺</strong><span>Happy Clients</span></div>
+        <div class="stat"><strong>↗</strong><span>Projects Completed</span></div>
+        <div class="stat"><strong>‹/›</strong><span>Lines of Code</span></div>
+        <div class="stat"><strong>◉</strong><span>Support Available</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container center"><p class="section-kicker">Our Services</p><h2>What We Can Do For You</h2>
+      <div class="service-grid">
+        <article class="service-card"><div class="service-icon">◎</div><h3>Website Development</h3><p>We build fast, responsive and SEO-friendly websites that represent your brand perfectly.</p></article>
+        <article class="service-card"><div class="service-icon">⌘</div><h3>Software Development</h3><p>Custom software solutions designed to simplify your business processes.</p></article>
+        <article class="service-card"><div class="service-icon">▯</div><h3>App Development</h3><p>Android and iOS apps that are user-friendly, powerful and performance-optimized.</p></article>
+        <article class="service-card"><div class="service-icon">♧</div><h3>AI & Technology Solutions</h3><p>AI integration, automation and intelligent solutions for the modern world.</p></article>
+        <article class="service-card"><div class="service-icon">⚑</div><h3>Digital Presence</h3><p>We help you grow online with SEO, social media and digital marketing strategies.</p></article>
+        <article class="service-card"><div class="service-icon">✎</div><h3>Creative Design</h3><p>We design eye-catching UI/UX, graphics, logos and brand identities.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="split-band" id="projects">
+    <div class="container band-grid">
+      <div><p class="eyebrow">Why Choose Us?</p><h3>Technology With Purpose</h3><ul class="checklist"><li>Client-focused approach</li><li>Modern & scalable solutions</li><li>On-time delivery</li><li>Affordable & transparent</li><li>Dedicated support</li></ul></div>
+      <div class="band-card"><p class="eyebrow">Our Work</p><h3>Recent Projects</h3><p>We have worked on a variety of projects for different industries.</p><a class="btn" href="#contact">View Our Projects →</a></div>
+      <div class="band-card" id="careers"><p class="eyebrow">Careers</p><h3>Jobs & Internships</h3><p>Join our team and work on exciting projects with us. Explore opportunities to grow your skills.</p><a class="btn" href="#contact">Explore Opportunities →</a></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-details"><p class="section-kicker">Get In Touch</p><h2>Let's Build Something Great Together</h2><p>Have a project in mind? Tell us what you need and the Hamid Tech World team can get back to you.</p>
+        <div class="contact-item"><span>☎</span><div><b>Phone / WhatsApp</b>+91 XXXXX XXXXX <small></small></div></div>
+        <div class="contact-item"><span>✉</span><div><b>Email</b>your-email@example.com <small></small></div></div>
+        <div class="contact-item"><span>⌖</span><div><b>Location</b>India <small></small></div></div>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault();alert('Demo form only. Connect this form to the client email or backend before launch.');">
+        <div class="form-row"><div><label for="name">Your Name</label><input id="name" placeholder="Enter your name" required></div><div><label for="email">Email Address</label><input id="email" type="email" placeholder="Enter your email" required></div></div>
+        <label for="service">Service Interested In</label><select id="service"><option>Website Development</option><option>Software Development</option><option>App Development</option><option>AI & Technology</option><option>Digital Marketing</option><option>Creative Design</option></select>
+        <label for="message">Your Message</label><textarea id="message" placeholder="Tell us about your project..." required></textarea>
+        <button class="btn" type="submit">Send Message →</button><p class="small-note">Demo interaction only — no message is sent yet.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container"><div class="footer-grid">
+    <div><img class="footer-logo" src="assets/hamid-tech-world-logo.png" alt="Hamid Tech World"><p>Let's build something amazing together.</p></div>
+    <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#careers">Careers</a><a href="#contact">Contact Us</a></div>
+    <div><h4>Services</h4><a href="#services">Website Development</a><a href="#services">Software Development</a><a href="#services">App Development</a><a href="#services">AI & Technology</a><a href="#services">Digital Presence</a><a href="#services">Creative Design</a></div>
+    <div><h4>Get In Touch</h4><p>India</p><p>+91 XXXXX XXXXX</p><p>your-email@example.com</p><a class="btn" href="#contact">Contact Us ↗</a></div>
+  </div><div class="copyright">© 2026 HAMID TECH WORLD. All Rights Reserved. <span> | Demo concept</span></div></div>
+</footer>
+</body>
+</html>
